@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://www.boldsky.com/img/2016/08/organdonation-12-1470978905.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+      }
+      
+      form {
+        max-width: 500px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #999;
+        margin-top: 50px;
+      }
+      
+      table {
+        width: 100%;
+      }
+      
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+      
+      td:first-child {
+        width: 30%;
+        padding: 10px;
+        font-weight: bold;
+      }
+      
+      td:last-child {
+        padding: 10px;
+      }
+      
+      .options {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      
+      .options label {
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      
+      button {
+        background-color: #4B0082;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      button:hover {
+        background-color: #fff;
+        color: #4B0082;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Sign Up</h1>
+    <form>
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label for="confirm-password">Confirm Password:</label></td>
+          <td><input type="password" id="confirm-password" name="confirm-password"></td>
+        </tr>
+      
+        <tr>
+          <td><label>you are:</label></td>
+          <td class="options">
+            <label for="male"><input type="radio" id="male" name="gender" value="male">Hospital</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female">Donor</label>
+            <label for="other"><input type="radio" id="other" name="gender" value="other">Reciver</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" id="age" name="age" min="18" max="100"></td>
+        </tr>
+      </table>
+      <button type="submit"  onclick="window.location.href='popup.html' ">Sign Up</button>
+    </form>
+  </body>
+</html>
